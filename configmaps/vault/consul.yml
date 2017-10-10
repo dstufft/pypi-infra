@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: consul
+  namespace: vault
+data:
+  server.json: |
+    {
+      "raft_protocol": 3,
+      "autopilot": {
+        "cleanup_dead_servers": true,
+        "last_contact_threshold": "300ms",
+        "max_trailing_logs": 250,
+        "server_stabilization_time": "10s"
+      }
+    }

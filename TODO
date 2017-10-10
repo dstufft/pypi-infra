@@ -1,0 +1,3 @@
+* Figure out why invoke requires running ``kubectl <command>`` every so often.
+* Vault: Consul deployment needs a valid TLS deployment.
+* Vault: Consul deployment needs ACL system activated (I think?)
